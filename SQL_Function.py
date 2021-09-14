@@ -42,3 +42,6 @@ def sort_data(data_file, data_name, indx=['stock_id', 'date']):
     df = df[~df.index.duplicated(keep='first')]
     df = df.sort_index()
     add_df_to_sql('stock_data', data_name, df, 'replace')
+
+def ADD_TEST():
+    print(fucking test)
